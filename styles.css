@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    cursor: pointer;
+}
+
+main{
+    color: var(--primary);
+    font-family: "DM Sans", sans-serif;
+    background-color: #f5f5f4;
+}
+
+main h1{
+    font-size: 50px;
+}
+
+:root{
+    --primary:#0284c7;
+    --secondary:#fb923c;
+    --yellow:#fef3c7;
+    --white:#fff;
+}
+
+.logo{
+    max-width: 100px;
+    max-height: 50px;
+    cursor: pointer;
+}
+
+#hero{
+    background-image: url('main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--white);
+}
+
+.hero .btn{
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--secondary);
+}
+
+.hero p{
+    max-width: 250px;
+    text-align: center;
+}
+
+#destinations{
+    padding: 40px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.title{
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.line{
+    background-color: var(--secondary);
+    width: 150px;
+    height: 4px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.destinations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.tours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+    background-image: url(/main-2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tours h1{
+    color: var(--white);
+}
+
+/* plus glyph for showing collapsible panels */
+.panel-heading .accordion-plus-toggle:before {
+    font-family: FontAwesome;
+    content: "\f068";
+    float: right;
+    color: silver;
+ }
+ 
+ .panel-heading .accordion-plus-toggle.collapsed:before {
+    content: "\f067";
+    color: silver;
+ }
+ 
+ /* arrow glyph for showing collapsible panels */
+ .panel-heading .accordion-arrow-toggle:before {
+    font-family: FontAwesome;
+    content: "\f078";
+    float: right;
+    color: silver;
+ }
+ 
+ .panel-heading .accordion-arrow-toggle.collapsed:before {
+    content: "\f054";
+    color: silver;
+ }
+ 
+ /* sets the link to the width of the entire panel title */
+ .panel-title > a {
+    display: block;
+ }
+
+ .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+    gap: 50px;
+}
+
+.contact .line{
+    margin-bottom: 50px;
+}
+
+.footer{
+    height: 100%;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.reseaux img{
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+}
+
+.copyright{
+    color: #fff;
+}
+
+@media screen and (max-width: 1099px) {
+    .destinations{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 565px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container-fluid img{
+    width: 100px;
+    height: 100px;
+}
